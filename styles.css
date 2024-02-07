@@ -1,0 +1,122 @@
+/* General styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e9f5fc;
+}
+
+/* Profile card container */
+.profile-container {
+    width: 100%;
+    max-width: 350px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Search bar styles */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Profile card styles */
+.profile-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #ffd700;
+    background: #f1f1f1;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+}
+
+.profile-name {
+    color: #333;
+    font-size: 22px;
+    margin: 10px 0 5px;
+}
+
+.profile-handle {
+    color: #555;
+    font-size: 16px;
+}
+
+.profile-bio {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.active-status {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.edit-profile {
+    background-color: transparent;
+    color: #333;
+    border-color: #ccc;
+}
+
+/* Hover effects for buttons */
+.btn:hover {
+    opacity: 0.9;
+}
+
+.active-status:hover {
+    background-color: #3e8e41;
+}
+
+.edit-profile:hover {
+    background-color: #f2f2f2;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+    .profile-container {
+        margin: 20px;
+    }
+}
