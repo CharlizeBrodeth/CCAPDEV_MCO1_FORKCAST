@@ -1,6 +1,7 @@
 body{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #87C4FF;
 }
@@ -9,7 +10,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #ffeed9;
+    background-color: #e0f4ff;
     position: fixed;
     top: 0%;
     right: 0%;
@@ -25,6 +26,11 @@ body{
     border-radius: 50%;
 }
 
+textarea{
+    resize: none;
+    font-family: Arial;
+}
+
 .back_button{
     border: 1px solid navy;
     margin: 5px;
@@ -32,16 +38,87 @@ body{
     height: 50px;
     background-color: #87C4FF;
     font-family: Arial;
-    border-radius: 45%;
+    color: navy;
+}
+
+.submit_button{
+    margin: 2% 50% 2% 45%;
+    height: 20px;
 }
 
 .box{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     position: fixed;
-    top: 25%;
-    width: 70%;
+    right: 15px;
+    top: 30%;
+    bottom: 30%;
+    width: 55%;
     height: 60%;
     background-color: #e0f4ff;
 }
+
+.box1{
+    width: 40%;
+    left: 15px;
+    background-color: #e0f4ff;
+}
+
+.image_box{
+    width: 35%;
+    height: 50%;
+    top: 32%;
+    left: 3.5%;
+    background-color: #ffeed9;
+}
+
+.image_resto{
+  width: 400px;
+  height: 250px;
+  margin: 25px;
+
+}
+
+.text_format{
+    font-family: Arial;
+    position: fixed;
+    bottom: 12.5%;
+    left: 15.5%;
+    font-weight: bold;
+    color:#39a7ff;
+
+}
+
+.text_review_title{
+    margin: 2px 10px 20px 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #39a7ff;
+}
+
+.text_review_parts{
+    color:#39a7ff;
+}
+
+.form_style{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: Arial;
+    margin: 2px 10px 10px 2px; 
+}
+
+.form_style1{
+    justify-content: left;
+    margin: 2px 30px 10px 30px;
+}
+
+.input_box_style{
+    margin: 0px 0px 0px 15px;
+    width: 50%;
+    height: 20px;
+}
+
