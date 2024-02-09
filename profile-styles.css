@@ -21,7 +21,7 @@ body, html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/*Review box*/
+/*Review part*/
 .review-box{
     display: flex;
     flex-direction: row;
@@ -95,6 +95,17 @@ body, html {
     color: navy;
     background-color:#e0f4ff;
     margin: 5px;
+}
+
+/*Home button*/
+.back-btn{
+    position:fixed;
+    top: 450px;
+    left: 220px;
+    width: 150px;
+    height: 50px;
+    background-color: #39a7ff;
+    border: 1px solid navy;
 }
 
 /* Profile card container */
