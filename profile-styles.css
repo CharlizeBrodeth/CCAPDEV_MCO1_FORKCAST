@@ -1,136 +1,45 @@
-/* General styles */
 body, html {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
     margin: 0;
+    padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color:#e0f4ff;
-}
-/*Review Container*/
-.reviews-container{
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    max-width: 600px;
-    max-height: 400px;
-    height: 400px;
-    margin: 150px 10px 0px 650px;
-    background-color:  #ffeed9;
-    overflow: scroll;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #e0f4ff;
 }
 
-/*Review part*/
-.review-box{
+.main-container {
     display: flex;
-    flex-direction: row;
-    width: 550px;
-    max-width: 550px;
-    margin: 10px;
-    height: 90px;
-    min-height: 90px;
-    background-color: #87C4FF;
-}
-
-.review-box-title{
-    background-color: #39a7ff;;
-    font-size: 30px;
-    font-family: Arial;
-    font-weight: bold;
-    color: navy;
-    align-items: center;
     justify-content: center;
-    width: 600px;
-    max-width: 600px;
-    margin: 50px 10px 0px 650px;
-    position: fixed;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 20px;
 }
 
-
-.review-box-image{
-    height: 70px;
-    width: 70px;
-    margin: 10px;
-    border-radius: 50%;
-}
-
-.review-des{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    background-color:#e0f4ff;
-    width: 380px;
-    height: 70px;
-    min-width: 380px;
-    margin: 10px 2px 10px 10px;
-}
-
-.review-text{
-    margin: 2px;
-    color: navy;
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.review-text-des{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 12px;
-    font-weight: normal;
-}
-
-.review-btn-form{
-    margin-top:9px;
-
-}
-
-.review-edit-btn{
-    border: 1px solid navy;
-    align-items: center;
-    justify-content: center;
-    width: 52px;
-    height: 25px;
-    color: navy;
-    background-color:#e0f4ff;
-    margin: 5px;
-}
-
-/*Home button*/
-.back-btn{
-    position:fixed;
-    top: 450px;
-    left: 220px;
-    width: 150px;
-    height: 50px;
-    background-color: #39a7ff;
-    border: 1px solid navy;
-}
-
-/* Profile card container */
-.profile-container {
-    position: fixed;
-    left: 2%;
-    width: 100%;
-    max-width: 550px;
-    margin: 50px auto;
+.profile-container, .reviews-container {
     background-color: #fff;
     border-radius: 8px;
-    overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-top: 20px;
 }
 
-/* Search bar styles */
+.profile-container {
+    flex-basis: 300px; 
+}
+
+.reviews-container {
+    flex-grow: 1;
+    max-width: 600px; 
+    overflow-y: auto; 
+}
+
 .search-container {
     display: flex;
-    align-items: center;
     background-color: #ffeed9;
     padding: 10px;
+    border-radius: 8px;
 }
 
 .search-input {
-    flex-grow: 1;
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -143,7 +52,6 @@ body, html {
     cursor: pointer;
 }
 
-/* Profile card styles */
 .profile-card {
     text-align: center;
     padding: 20px;
@@ -153,11 +61,9 @@ body, html {
     width: 80px;
     height: 80px;
     margin: 0 auto;
-    position: relative;
     border-radius: 50%;
     overflow: hidden;
     border: 4px solid #ffd700;
-    background: #f1f1f1;
 }
 
 .profile-image {
@@ -165,33 +71,17 @@ body, html {
     height: auto;
 }
 
-.profile-name {
-    color: #333;
-    font-size: 22px;
-    margin: 10px 0 5px;
+.profile-name, .profile-handle, .profile-bio {
+    margin: 10px 0;
 }
 
-.profile-handle {
-    color: #555;
-    font-size: 16px;
-}
-
-.profile-bio {
-    color: #666;
-    font-size: 14px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-/* Button styles */
 .btn {
     padding: 10px 20px;
     border-radius: 5px;
-    border: 1px solid transparent;
+    margin: 5px;
     cursor: pointer;
     font-weight: bold;
-    outline: none;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 .active-status {
@@ -202,25 +92,61 @@ body, html {
 .edit-profile {
     background-color: transparent;
     color: #333;
-    border-color: #ccc;
+    border: 1px solid #ccc;
 }
 
-/* Hover effects for buttons */
-.btn:hover {
-    opacity: 0.9;
+.review-box {
+    background-color: #87C4FF;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
 }
 
-.active-status:hover {
-    background-color: #3e8e41;
+.review-box-title {
+    font-size: 20px;
+    color: navy;
+    font-weight: bold;
 }
 
-.edit-profile:hover {
-    background-color: #f2f2f2;
+.review-box-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
-/* Responsive design adjustments */
-@media (max-width: 600px) {
-    .profile-container {
-        margin: 20px;
+.review-des {
+    flex-grow: 1;
+}
+
+.review-text-des {
+    font-size: 14px;
+}
+
+.review-edit-btn {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.back-btn {
+    padding: 10px 20px;
+    background-color: #39a7ff;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
