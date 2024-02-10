@@ -1,74 +1,69 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>ForKast: Home Page</title>
-        <link rel="stylesheet" href="mco1homedesign.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForKast: Home Page</title>
+    <link rel="stylesheet" href="home-styles.css">
+</head>
 <body>
-    <!--Header-->
-    <div class = "header">
-        <a href = "mco1home.html">
-        <img src="forkast.png" alt="ForKast Logo" class = logo>
-        </a>
-       
-        <a href="profile.html">
-            <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Profile Picture" class="profile-image"/>
-        </a>
-    </div>
-    <!--Body-->
-    <div class = "box1">
-        <div class = "home-actions">
+    <header class="site-header">
+        <div class="logo-container">
+            <a href="mco1home.html">
+                <img src="forkast.png" alt="ForKast Logo" class="logo">
+            </a>
+        </div>
+        <nav class="profile-nav">
+            <a href="profile.html">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Profile Picture" class="profile-image"/>
+            </a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="action-section">
             <button class="btn create-review">Create Review</button>
             <button class="btn view-review">View Review</button>
-        </div>
-
-            <!--Pictures of the restaurants-->
-            <div class = "box2">
-                <div class ="restaurant-bg">
-                    <a href = "mcdo.html">
-                        <img src="mcdo.png" alt="mcdo logo" class="mcdo-logo"/> 
-                        <p class="restaurant-name">McDonalds</p>
+        </section>
+        <section class="restaurants-overview">
+            <div class="restaurants-container">
+                <div class="restaurant-item">
+                    <a href="mcdo.html">
+                        <img src="mcdo.png" alt="McDonald's Logo" class="restaurant-logo"/> 
+                        <p>McDonalds</p>
                     </a>
                 </div>
-
-                <div class ="restaurant-bg">
-                    <a href = "jollibee.html">
-                        <img src="jollibee.png" alt="jollibee logo" class="jollibee-logo"/>
-                        <p class="restaurant-name">Jollibee</p>
+                <div class="restaurant-item">
+                    <a href="jollibee.html">
+                        <img src="jollibee.png" alt="Jollibee Logo" class="restaurant-logo"/>
+                        <p>Jollibee</p>
                     </a>
                 </div>
-
-                <div class ="restaurant-bg">
-                    <a href = "burgerking.html">
-                        <img src="bk.jpg" alt="bk logo" class="bk-logo"/><br>
-                        <p class="restaurant-name">Burger King</p>
+                <div class="restaurant-item">
+                    <a href="burgerking.html">
+                        <img src="bk.jpg" alt="Burger King Logo" class="restaurant-logo"/>
+                        <p>Burger King</p>
                     </a>
                 </div>
-            </div>
-
-            <div class = "box3">
-                <div class="restaurant-bg">
+                <div class="restaurant-item">
                     <a href="kfc.html">
-                        <img src="kfc.png" alt="kfc logo" class="kfc-logo"/>
-                        <p class="restaurant-name">KFC</p>
+                        <img src="kfc.png" alt="KFC Logo" class="restaurant-logo"/>
+                        <p>KFC</p>
                     </a>
                 </div>
-
-                <div class="restaurant-bg">
+                <div class="restaurant-item">
                     <a href="bonchon.html">
-                        <img src="bonchon.png" alt="bonchon logo" class="bonchon-logo"/>
-                        <p class="restaurant-name">BonChon</p>
+                        <img src="bonchon.png" alt="BonChon Logo" class="restaurant-logo"/>
+                        <p>BonChon</p>
                     </a>
                 </div>
-                
-                <div class="restaurant-bg">
+                <div class="restaurant-item">
                     <a href="chowking.html">
-                        <img src="chowking.png" alt="chowking logo" class="chowking-logo"/>
-                        <p class="restaurant-name">Chowking</p>
+                        <img src="chowking.png" alt="Chowking Logo" class="restaurant-logo"/>
+                        <p>Chowking</p>
                     </a>
                 </div>
             </div>
-    </div>
-
+        </section>
+    </main>
 </body>
 </html>
