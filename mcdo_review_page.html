@@ -3,39 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./review_page.css"/>
-    <title>Review Page: Mcdonalds</title>
+    <title>Review Page: McDonald's</title>
 </head>
 <body>
-    <div class="top_header"> 
+    <header class="top_header"> 
         <button class="back_button">Back to homepage</button>
-        <img class="logo_style" src="forkast_logo.png" alt="forkast logo">
+        <img class="logo_style" src="forkast_logo.png" alt="Forkast Logo">
         <button class="back_button">Search Restaurant</button>
-    </div>
+    </header>
 
-    <div class="box">
-        <div class="text_review_title">Write Your Review!</div>
-        <!--Form part-->
-        <form>
-            <div class="form_style form_style1">
-                <div class="text_review_parts">Title: </div>
-                <input class="input_box_style" type="text" id="review_title" placeholder="Enter title of review here...">
-            </div>
+    <main class="content_area">
+        <section class="review_section">
+            <h2 class="text_review_title">Write Your Review!</h2>
+            <form>
+                <div class="form_group">
+                    <label for="review_title" class="text_review_parts">Title:</label>
+                    <input class="input_box_style" type="text" id="review_title" placeholder="Enter title of review here...">
+                </div>
+                <div class="form_group">
+                    <label for="review_desc" class="text_review_parts">Description:</label>
+                    <textarea id="review_desc" cols="70" rows="10" placeholder="Enter more details here..."></textarea>
+                </div>
+                <button type="submit" class="back_button submit_button">Submit</button>
+            </form>
+        </section>
 
-            <div class="form_style">
-                <div class="text_review_parts">Description:</div>
-                <textarea name="description" id="review_desc" cols="70" rows="10" placeholder="Enter more details here..."></textarea>
-            </div>
-        </form>
-
-        <button class="back_button submit_buttfon">Submit</button>
-
-
-    </div>
-    <div class="box box1"> 
-        <div class="box image_box">
-            <img class="image_resto" src="https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.18169-9/560635_428312907217975_1839285133_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=4dc865&_nc_eui2=AeFNirsgr-b7sGLpQUB5tPxMl2jDRWm6JS-XaMNFabolL5iub1Fzh9GNzHESwWz3F0MEP6i073a1CHo8Qgwr7R1a&_nc_ohc=h4wqdrYHeogAX_BsDyr&_nc_ht=scontent.fmnl9-1.fna&oh=00_AfClEBqjnJ--dVimr3oGQHFizICQqchWKEH8Z488bet_cA&oe=65EE631C" alt="Mcdo Restaurant">
-            <div class="text_format">Mcdonalds</div>
-        </div>
-    </div>
+        <aside class="image_section">
+            <img class="image_resto" src="https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.18169-9/560635_428312907217975_1839285133_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=4dc865&_nc_eui2=AeFNirsgr-b7sGLpQUB5tPxMl2jDRWm6JS-XaMNFabolL5iub1Fzh9GNzHESwWz3F0MEP6i073a1CHo8Qgwr7R1a&_nc_ohc=h4wqdrYHeogAX_BsDyr&_nc_ht=scontent.fmnl9-1.fna&oh=00_AfClEBqjnJ--dVimr3oGQHFizICQqchWKEH8Z488bet_cA&oe=65EE631C" alt="McDonald's Restaurant">
+            <div class="text_format">McDonald's</div>
+        </aside>
+    </main>
 </body>
 </html>
