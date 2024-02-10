@@ -75,18 +75,24 @@ textarea{
 
 .image_resto{
   width: 400px;
+  min-width: 400px;
   height: 250px;
-  margin: 25px;
+  min-height: 250px;
+  margin: 54px 6px 0px 23px;
 
 }
 
 .text_format{
+    display: flex;
     font-family: Arial;
-    position: fixed;
+    /*position: fixed;
     bottom: 12.5%;
-    left: 15.5%;
+    left: 15.5%;*/
     font-weight: bold;
     color:#39a7ff;
+    margin: 40px 0px 0px 0px;
+    justify-content: center;
+    align-items: baseline;
 
 }
 
@@ -100,6 +106,7 @@ textarea{
 }
 
 .text_review_parts{
+    margin: 1px 10px 2px 28px;
     color:#39a7ff;
 }
 
