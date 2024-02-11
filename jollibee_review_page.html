@@ -6,36 +6,33 @@
     <title>Review Page: Jollibee</title>
 </head>
 <body>
-    <div class="top_header"> 
+    <header class="top_header"> 
         <button class="back_button">Back to homepage</button>
-        <img class="logo_style" src="forkast_logo.png" alt="forkast logo">
+        <img class="logo_style" src="forkast_logo.png" alt="Forkast Logo">
         <button class="back_button">Search Restaurant</button>
-    </div>
+    </header>
 
-    <div class="box">
-        <div class="text_review_title">Write Your Review!</div>
-        <!--Form part-->
-        <form>
-            <div class="form_style form_style1">
-                <div class="text_review_parts">Title: </div>
-                <input class="input_box_style" type="text" id="review_title" placeholder="Enter title of review here...">
-            </div>
+    <main class="content_area">
 
-            <div class="form_style">
-                <div class="text_review_parts">Description:</div>
-                <textarea name="description" id="review_desc" cols="70" rows="10" placeholder="Enter more details here..."></textarea>
-            </div>
-        </form>
-
-        <button class="back_button submit_button">Submit</button>
-
-
-    </div>
-    <div class="box box1"> 
-        <div class="box image_box">
+        <aside class="image_section">
             <img class="image_resto" src="https://media.philstar.com/photos/2019/07/24/jfc_2019-07-24_16-57-25.jpg" alt="Jollibee Restaurant">
             <div class="text_format">Jollibee</div>
-        </div>
-    </div>
+        </aside>
+        
+        <section class="review_section">
+            <h2 class="text_review_title">Write Your Review!</h2>
+            <form>
+                <div class="form_group">
+                    <label for="review_title" class="text_review_parts">Title:</label>
+                    <input class="input_box_style" type="text" id="review_title" placeholder="Enter title of review here...">
+                </div>
+                <div class="form_group">
+                    <label for="review_desc" class="text_review_parts">Description:</label>
+                    <textarea id="review_desc" cols="70" rows="10" placeholder="Enter more details here..."></textarea>
+                </div>
+                <button type="submit" class="back_button submit_button">Submit</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
