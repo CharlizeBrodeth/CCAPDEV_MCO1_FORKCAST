@@ -95,14 +95,25 @@ body, html {
     border: 1px solid #ccc;
 }
 
-.review-box {
+.review-box-whole{
+    flex-direction: column;
     background-color: #87C4FF;
     padding: 10px;
     margin: 10px 0;
     display: flex;
-    align-items: center;
     border-radius: 5px;
+    align-items: center;
 }
+
+.review-box {
+    margin: 5px 0px 15px 0px;
+    display: flex;
+    flex-direction: row;
+    background-color: #87C4FF;
+    align-items: center;
+
+}
+
 
 .review-box-title {
     font-size: 20px;
@@ -117,6 +128,10 @@ body, html {
     margin-right: 10px;
 }
 
+.review_text{
+    font-weight: 200;
+}
+
 .review-des {
     flex-grow: 1;
 }
@@ -125,12 +140,31 @@ body, html {
     font-size: 14px;
 }
 
-.review-edit-btn {
+.view-post-btn{
+    padding: 5px 10px;
+    margin: 5 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #39a7ff;
+}
+
+.up-vote-btn{
     padding: 5px 10px;
     margin: 0 5px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    background-color: #4CAF50;
+}
+
+.down-vote-btn{
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: red;
 }
 
 .back-btn {
