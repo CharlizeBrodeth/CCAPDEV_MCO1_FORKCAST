@@ -144,6 +144,55 @@ body, html {
     margin-left: 10px;
 }
 
+/*Buttons for profiles*/
+.up-vote-btn{
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #4CAF50;
+}
+
+.down-vote-btn{
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: red;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input_box_style, textarea {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial;
+    margin-top: 5px;
+}
+
+textarea {
+    height: 50px;
+    width: 90%;
+    display: flex;
+    resize: none;
+}
+
+.reply-box{
+    background-color: #87C4FF;
+    padding: 10px;
+    margin: 10px 0;
+    margin-top: 0cm;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
 @media (max-width: 768px) {
     .main-container {
         flex-direction: column;
