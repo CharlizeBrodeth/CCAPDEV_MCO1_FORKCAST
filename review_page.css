@@ -92,6 +92,39 @@ textarea {
     resize: vertical;
 }
 
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.star-rating {
+    font-size: 0; 
+    direction: rtl; 
+}
+
+.star-rating input[type="radio"] {
+    display: none; 
+}
+
+.star-rating label {
+    font-size: 2rem; 
+    color: #ddd; 
+    padding: 0 5px; 
+    cursor: pointer;
+    display: inline-block;
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+    color: #f5eb3b; 
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type="radio"]:focus + label {
+    color: #f5eb3b; 
+}
+
 @media (max-width: 768px) {
     .content_area {
         flex-direction: column;
