@@ -72,6 +72,29 @@ body {
     font-weight: bold;
 }
 
+.search-container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box-header {
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: auto; 
+}
+
+.search-button-header {
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
 @media (max-width: 768px) {
     .restaurants-container {
         flex-direction: column;
@@ -84,4 +107,13 @@ body {
     .profile-nav .profile-image {
         margin-top: 10px;
     }
+
+    .search-container-header {
+        width: 100%; 
+        justify-content: space-between;
+    }
+    
+    .search-box-header {
+        flex-grow: 1; 
+    }    
 }
