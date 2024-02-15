@@ -70,6 +70,17 @@ header {
     background-color: #449D44;
 }
 
+.back-btn {
+    padding: 10px 20px;
+    background-color: #39a7ff;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    margin-left: 45%;
+}
+
 @media (max-width: 768px) {
     .header-content, .main-container {
         flex-direction: column;

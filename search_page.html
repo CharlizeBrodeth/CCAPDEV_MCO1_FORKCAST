@@ -16,12 +16,18 @@
         <aside class="image_section">
         </aside>
         <div class="search-container">
-            <select class="search-box" id="searchFilter">
-                <option value="name">Search in Restaurants</option>
-                <option value="review">Search in review</option>
-            </select>
+            <input type="search" class="search-box" id="searchFilter" placeholder="Search...">
             <button class="search_button">Search</button>
         </div>
+        <div class="search-container">
+            <select class="search-box" id="searchFilter" required>
+                <option value="value" selected>Default</option>
+                <option value="name">Search in Restaurants</option>
+                <option value="review">Search in Reviews</option>
+            </select>
+        </div>
     </div>
+
+    <a href="mco1home.html"> <button class="back-btn">Back to homepage</button></a>
 </body>
 </html>
