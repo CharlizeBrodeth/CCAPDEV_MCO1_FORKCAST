@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="edit-styles.css">
+</head>
+<body>
+    <div class="edit-profile-container">
+        <h2>EDIT PROFILE</h2>
+        <form id="edit-profile-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="profile-name">Screen Name</label>
+                <input type="text" id="profile-name" name="profile-name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="profile-handle">Handle</label>
+                <input type="text" id="profile-handle" name="profile-handle" placeholder="@YourHandle" required>
+            </div>
+            <div class="form-group">
+                <label for="profile-bio">Bio</label>
+                <textarea id="profile-bio" name="profile-bio" placeholder="Your Bio" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="profile-picture">Profile Picture URL</label>
+                <input type="file" id="profile-picture" name="profile-picture" placeholder="https://example.com/your-photo.jpg" required>
+            </div>
+            <button type="submit" class="btn save-changes-btn">Save Changes</button>
+        </form>
+    </div>
+</body>
+</html>
